@@ -46,9 +46,15 @@ extension CGRect : Scalable {
 
 var doubledRect = rect.scaleBySizingFactor(2)
 
+// Generic functions
+func scaleBySizingFactor<T: Scalable>(array: T[], factor: Double) -> T[] {
+//    return array.map({ item in item.scaleBySizingFactor(factor) })
+      return array.map { $0.scaleBySizingFactor(factor) }
+}
 
+var scaledFonts = scaleBySizingFactor([sysFont, doubledSysFont], 2)
 
-
+var scaledRects = scaleBySizingFactor([rect, doubledRect], 2)
 
 
 
