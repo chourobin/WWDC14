@@ -57,5 +57,3 @@ var scaledFonts = scaleBySizingFactor([sysFont, doubledSysFont], 2)
 var scaledRects = scaleBySizingFactor([rect, doubledRect], 2)
 
 
-
-
