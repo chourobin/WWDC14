@@ -8,7 +8,7 @@ for name : AnyObject in solarSystem {
     println("This is the \(name)")
 }
 
-var sysFont: NSFont = NSFont.systemFontOfSize(0)
+var sysFont : NSFont = NSFont.systemFontOfSize(0)
 
 var number = sysFont.numberOfGlyphs
 
