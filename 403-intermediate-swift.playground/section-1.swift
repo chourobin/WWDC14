@@ -126,12 +126,26 @@ class P {
 }
 
 class CreditCard {
-    let holder: P?
+    unowned let holder: P
     
     init(holder: P) {
         self.holder = holder
     }
 }
+
+// Strong, Weak, Unowned references
+// Use strong references from owners to the objects they own
+// Use weak references among objects with independent lifetimes
+// Use unowned references from owned objects with the same lifetime
+
+/* 
+Initialization
+*/
+
+// Every value must be initialized before it is used
+
+var message: String
+
 
 
 
